@@ -7,11 +7,12 @@ for (let i = 1; i < 101 ; i++ ){
   // aggiungere la classe al div
   box.classList.add("my_box");
   // aggiungere i al div
-
-  console.log ('div creato', box);
   box.append(i);
 
+  console.log ('div creato', box);
+
 // 2. creare condizioni  
+
   if (!(i % 3)){
     console.log('divis x 3  FIZZ', i);
     box.classList.add("fizz");
@@ -27,8 +28,7 @@ for (let i = 1; i < 101 ; i++ ){
     box.classList.remove("buzz");
     box.classList.remove("fizz");
     box.classList.add("fizz_buzz");
-    // box.append(i, ' fizzBuzz');
-
   }
+  // stampa su html
   document.querySelector(".my_container").append(box);
 }
